@@ -85,13 +85,13 @@ Low-Level Design me hum system ke internal logic aur component details design ka
 **💬 Example:**
 **Order Service** ke andar:
 
-```js
+<!-- ```js
 function createOrder(userId, items, paymentMode) {
   // Payment process
   // Order save in DB
   // Status update
 }
-
+``` -->
 
 # 🏗️ Monolithic Architecture
 
@@ -100,6 +100,7 @@ function createOrder(userId, items, paymentMode) {
 **Monolithic Architecture** ek aisi software architecture hai jisme **poora application ek single unit (ya single codebase)** me hota hai.
 
 Iska matlab:
+
 - Application ke sare modules (frontend, backend, database access, business logic, authentication, etc.)  
   ek hi jagah likhe jaate hain.  
 - Sab kuch **ek hi server/application** me run hota hai.
@@ -107,6 +108,7 @@ Iska matlab:
 ---
 
 ### 💬 Simple Definition
+
 > “Monolithic architecture wo hoti hai jisme application ke sare parts tightly connected hote hain aur ek hi deployable unit ke roop me run karte hain.”
 
 ---
@@ -182,15 +184,18 @@ to **poori application ko dobara build aur redeploy** karna padta hai.
 ## 🧮 6. Real-Life Examples
 
 ### 🔹 Example 1: Early Versions of Instagram
+
 - Instagram ke early versions ek **monolithic Django app** the.  
 - Sab kuch — posts, comments, profiles, notifications — ek hi backend me run karta tha.  
 - Scale karne me problems aane lagi to Instagram ne microservices adopt kiye.
 
 ### 🔹 Example 2: WordPress
+
 - WordPress bhi ek monolithic architecture ka example hai.  
 - Ek single PHP application jisme themes, plugins, database access sab ek system me run karte hain.
 
 ### 🔹 Example 3: E-Commerce App
+
 Ek typical Monolithic e-commerce app me:
 
 Frontend (HTML/CSS)
@@ -248,6 +253,7 @@ lekin approach bilkul alag hoti hai.
 ## 🧱 1. Monolithic Architecture Recap
 
 Monolithic app ek **single unit** hoti hai jisme:
+
 - Sab modules (auth, payments, orders, notifications) ek hi codebase me likhe hote hain  
 - Application ek hi process ke andar run karti hai  
 - Deployment ek hi server ya container par hota hai  
@@ -295,12 +301,13 @@ Netflix, Uber, Amazon — sab ne microservices adopt kiya hai for scalability an
 
 ## 🧠 4. Real-Life Example: E-Commerce App
 
-### 🏗️ Monolithic Structure:
+### 🏗️ Monolithic Structure
 
 [Frontend UI] → [Backend Server] → [Database]
 
 
 Ek backend server handle karega:
+
 - Login/Register  
 - Product listing  
 - Cart management  
@@ -312,7 +319,7 @@ Agar payment system me bug aaye, to **poori app crash ho sakti hai**.
 
 ---
 
-### 🧩 Microservices Structure:
+### 🧩 Microservices Structure
 
 [Frontend] → [API Gateway] → [Auth Service]
 → [Product Service]
@@ -384,6 +391,7 @@ Microservices ke fayde ke sath kuch challenges bhi hain 👇
 ---
 
 ### 💬 Final Thought
+
 > “Monolithic is simple and quick to start.  
 > Microservices are powerful and scalable to sustain.”
 
